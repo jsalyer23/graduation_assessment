@@ -1,0 +1,19 @@
+<h1>Welcome! Please sign the guest book</h1>
+
+<%= form_for @message do |form| %>
+
+	<div>
+		<%= form.label :name %>
+		<%= form.text_field :name %>
+	</div>
+
+	<div>
+		<%= form.label :message %>
+		<%= form.text_area :body %>
+	</div>
+
+	<div>
+		<%= form.submit %>
+	</div>
+
+<% end %>
