@@ -1,0 +1,13 @@
+<% if flash[:notice] %>
+  <div class="notice"><%= flash[:notice] %></div>
+<% end %>
+
+
+<% @messages.each do |message| %>
+
+	<div>
+		<%= message.name %> signed the guestbook <%= time_ago_in_words(message.created_at) %>:<br>
+		<%= message.body %>
+	</div>
+
+<% end %>

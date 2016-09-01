@@ -1,3 +1,7 @@
+<% if flash[:notice] %>
+  <div class="notice"><%= flash[:notice] %></div>
+<% end %>
+ 
 <h1>Welcome! Please sign the guest book</h1>
 
 <%= form_for @message do |form| %>
